@@ -418,26 +418,8 @@ body {
     min-height: 24rem;
 }
 
-.hero__image-container::before {
-    position: absolute;
-    inset: 8%;
-    z-index: -1;
-    border: 6px solid var(--clau-border);
-    border-radius: 50%;
-    background-color: var(--clau-paper);
-    background-image:
-        linear-gradient(45deg, #d9d9d9 25%, transparent 25%),
-        linear-gradient(-45deg, #d9d9d9 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, #d9d9d9 75%),
-        linear-gradient(-45deg, transparent 75%, #d9d9d9 75%);
-    background-position: 0 0, 0 18px, 18px -18px, -18px 0;
-    background-size: 36px 36px;
-    content: "";
-}
-
 .hero__image {
     display: block;
-    width: min(78vw, 30rem);
     aspect-ratio: 1;
     border: 6px solid var(--clau-border);
     border-radius: 50%;
