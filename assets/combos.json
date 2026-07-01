@@ -1,0 +1,31 @@
+﻿[
+    {
+        "id": 1,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "nombre": "Combo Familiar",
+        "descripcion": "Pizza grande + papas + gaseosa 1.5L",
+        "precio": 12.99
+    },
+    {
+        "id": 2,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "nombre": "Combo Premium",
+        "descripcion": "Hamburguesa premium + papas + bebida",
+        "precio": 10.99
+    },
+    {
+        "id": 3,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "nombre": "Combo Económico",
+        "descripcion": "2 Perros calientes + gaseosa",
+        "precio": 8.99
+    },
+    {
+        "id": 4,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "nombre": "Combo Deluxe",
+        "descripcion": "6 Alitas + salchipapas + bebida 2L",
+        "precio": 14.99
+    }
+]
+

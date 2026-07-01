@@ -1,0 +1,250 @@
+[
+    {
+        "id": 1,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "nombre": "Perro sencillo",
+        "categoria": "perros",
+        "descripcion": "Perros",
+        "precio": 6500
+    },
+    {
+        "id": 2,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "nombre": "Hawaiano",
+        "categoria": "perros",
+        "descripcion": "Perros",
+        "precio": 11900
+    },
+    {
+        "id": 3,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "nombre": "Hawaiano con papas a la francesa",
+        "categoria": "perros",
+        "descripcion": "Perros",
+        "precio": 13900
+    },
+    {
+        "id": 4,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "nombre": "Suizo",
+        "categoria": "perros",
+        "descripcion": "Perros",
+        "precio": 16900
+    },
+    {
+        "id": 5,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "nombre": "Suizo con papas a la francesa",
+        "categoria": "perros",
+        "descripcion": "Perros",
+        "precio": 17900
+    },
+    {
+        "id": 6,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "nombre": "Choriperro",
+        "categoria": "perros",
+        "descripcion": "Perros",
+        "precio": 12900
+    },
+    {
+        "id": 7,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "nombre": "Choriperro con papas a la francesa",
+        "categoria": "perros",
+        "descripcion": "Perros",
+        "precio": 14900
+    },
+    {
+        "id": 8,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "nombre": "Doña Claudia",
+        "categoria": "perros",
+        "descripcion": "Perros",
+        "precio": 13900
+    },
+    {
+        "id": 9,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "nombre": "Doña Claudia con papas a la brasa",
+        "categoria": "perros",
+        "descripcion": "Perros",
+        "precio": 15900
+    },
+    {
+        "id": 10,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "nombre": "Salchipapa pequeña",
+        "categoria": "salchipapas",
+        "descripcion": "Salchipapas",
+        "precio": 6900
+    },
+    {
+        "id": 11,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "nombre": "Salchipapa sencilla",
+        "categoria": "salchipapas",
+        "descripcion": "Salchipapas",
+        "precio": 12900
+    },
+    {
+        "id": 12,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "nombre": "Salchipapa para 2 personas",
+        "categoria": "salchipapas",
+        "descripcion": "Salchipapas",
+        "precio": 25000
+    },
+    {
+        "id": 13,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "nombre": "Salchipollo",
+        "categoria": "salchipapas",
+        "descripcion": "Salchipapas",
+        "precio": 18900
+    },
+    {
+        "id": 14,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "nombre": "Choripapa",
+        "categoria": "salchipapas",
+        "descripcion": "Salchipapas",
+        "precio": 16900
+    },
+    {
+        "id": 15,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "nombre": "Salchipapa suiza",
+        "categoria": "salchipapas",
+        "descripcion": "Salchipapas",
+        "precio": 19900
+    },
+    {
+        "id": 16,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "nombre": "Salvajada para 4 personas",
+        "categoria": "salchipapas",
+        "descripcion": "Salchipapas",
+        "precio": 49900
+    },
+    {
+        "id": 17,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "nombre": "Hamburguesa de carne",
+        "categoria": "hamburguesas",
+        "descripcion": "Hamburguesas",
+        "precio": 14900
+    },
+    {
+        "id": 18,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "nombre": "Hamburguesa de carne con papas a la francesa",
+        "categoria": "hamburguesas",
+        "descripcion": "Hamburguesas",
+        "precio": 16900
+    },
+    {
+        "id": 19,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "nombre": "Hamburguesa de pollo",
+        "categoria": "hamburguesas",
+        "descripcion": "Hamburguesas",
+        "precio": 13900
+    },
+    {
+        "id": 20,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "nombre": "Hamburguesa de pollo con papas a la francesa",
+        "categoria": "hamburguesas",
+        "descripcion": "Hamburguesas",
+        "precio": 15900
+    },
+    {
+        "id": 21,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "nombre": "Hamburguesa mixta",
+        "categoria": "hamburguesas",
+        "descripcion": "Hamburguesas",
+        "precio": 21900
+    },
+    {
+        "id": 22,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "nombre": "Pechuga a la plancha con papas a la francesa y ensalada",
+        "categoria": "asados",
+        "descripcion": "Asados / Picadas",
+        "precio": 25000
+    },
+    {
+        "id": 23,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "nombre": "Asado mixto",
+        "categoria": "asados",
+        "descripcion": "Chorizo, pechuga, cerdo, papas a la francesa y ensalada",
+        "precio": 25000
+    },
+    {
+        "id": 24,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "nombre": "Cerdo a la plancha con papas a la francesa y ensalada",
+        "categoria": "asados",
+        "descripcion": "Asados / Picadas",
+        "precio": 25000
+    },
+    {
+        "id": 25,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "nombre": "Pizza Salami",
+        "categoria": "pizzas",
+        "descripcion": "Pizzas",
+        "precio": 24900
+    },
+    {
+        "id": 26,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "nombre": "Pizza Hawaiana",
+        "categoria": "pizzas",
+        "descripcion": "Pizzas",
+        "precio": 23900
+    },
+    {
+        "id": 27,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "nombre": "Pizza Pepperoni",
+        "categoria": "pizzas",
+        "descripcion": "Pizzas",
+        "precio": 26900
+    },
+    {
+        "id": 28,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "nombre": "Pizza Jamón y queso",
+        "categoria": "pizzas",
+        "descripcion": "Pizzas",
+        "precio": 23900
+    },
+    {
+        "id": 29,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "nombre": "Pizza Doña Clau",
+        "categoria": "pizzas",
+        "descripcion": "Cuatro carnes: cerdo, pechuga, chorizo y carne",
+        "precio": 31900
+    },
+    {
+        "id": 30,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "nombre": "Pizza Perro",
+        "categoria": "pizzas",
+        "descripcion": "Pizzas",
+        "precio": 24900
+    },
+    {
+        "id": 31,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "nombre": "Pizza Jamón, queso y pollo",
+        "categoria": "pizzas",
+        "descripcion": "Pizzas",
+        "precio": 26000
+    }
+]

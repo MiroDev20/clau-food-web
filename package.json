@@ -1,0 +1,20 @@
+{
+  "name": "clau-food",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "esbuild services/main.js --bundle --outfile=assets/bundle.js --format=esm --minify",
+    "dev": "esbuild services/main.js --bundle --outfile=assets/bundle.js --format=esm --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}
