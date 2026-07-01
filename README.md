@@ -1,4 +1,3 @@
-d
 # 🍔 Clau Food — Carta digital interactiva
 
 > Menú visual para pedir perros, salchipapas, hamburguesas, asados y pizzas.  
