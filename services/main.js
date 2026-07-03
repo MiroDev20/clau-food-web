@@ -3,7 +3,7 @@ import { fetchMenuData, renderMenuItems, getCategorySlug, generateMenuSchema, in
 
 // Importar funciones comunes
 import { initHeaderMenu } from './header-menu.js';
-import { initMenuFilters, getActiveFilter } from './menu-filter.js';
+import { initMenuFilters, getActiveFilter, setFullMenuLoaded } from './menu-filter.js';
 import { initOrderTutorial, addTutorialBadge } from './order-tutorial.js';
 import { initProductSnapshot } from './product-snapshot.js';
 import { loadCombos } from './combos-load.js';
@@ -69,6 +69,7 @@ function initPageSpecificScripts() {
     } else if (page === 'menu') {
         // Página de menú: cargar menú completo
         initMenuLoader();
+        setFullMenuLoaded(true);
 
         // Inject full menu schema after menu loads
         fetchMenuData(MENU_JSON_PATH).then(data => {
@@ -76,8 +77,7 @@ function initPageSpecificScripts() {
             injectSchemaScript(schema);
         }).catch(err => console.warn('Could not generate schema:', err));
 
-        // Iniciar lazy loading después de renderizar
-        setTimeout(initLazyLoading, 100);
+        // Iniciar lazy loading después de renderizar (se ejecutará después de cada renderizado en menu-load.js)
     }
 }
 

@@ -5,6 +5,12 @@ const MENU_SECTION_SELECTOR = ".menu";
 const MENU_ITEM_SELECTOR = ".menu__item[data-category]";
 const ALL_CATEGORIES = "all";
 
+// Flag to track if full menu is loaded (for index.html vs menu.html)
+let isFullMenuLoaded = false;
+export function setFullMenuLoaded(value) {
+    isFullMenuLoaded = value;
+}
+
 function getFilterValue(filter) {
     return filter.value || filter.dataset.menuFilter || ALL_CATEGORIES;
 }
@@ -75,8 +81,20 @@ function updateMenuVisibility(filter) {
         // This triggers re-render in menu-load.js with correct items
         if (filterChanged) {
             lastFilterValue = selectedCategory;
-            if (typeof resetPagination === "function") {
+
+            // Only use pagination if full menu is loaded (menu.html)
+            if (isFullMenuLoaded && typeof resetPagination === "function") {
                 resetPagination();
+            } else {
+                // For featured menu (index.html), filter via CSS
+                items.forEach(item => {
+                    if (selectedCategory === ALL_CATEGORIES) {
+                        item.hidden = false;
+                    } else {
+                        const itemCategory = item.dataset.category;
+                        item.hidden = itemCategory !== selectedCategory;
+                    }
+                });
             }
         }
 

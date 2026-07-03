@@ -1,6 +1,6 @@
-const SNAPSHOT_WIDTH = 800;
-const SNAPSHOT_HEIGHT = 920;
-const SNAPSHOT_PADDING = 32;
+const SNAPSHOT_WIDTH = 600;
+const SNAPSHOT_HEIGHT = 750;
+const SNAPSHOT_PADDING = 24;
 
 function getProductData(card) {
     const image = card.querySelector(".product-card__image, .menu__image, .combos__image");
@@ -95,18 +95,32 @@ function drawImagePlaceholder(context, x, y, width, height) {
     context.save();
     drawRoundedRect(context, x, y, width, height, 8);
     context.clip();
-    context.fillStyle = "#ececec";
+
+    // Fondo degradado
+    const gradient = context.createLinearGradient(x, y, x, y + height);
+    gradient.addColorStop(0, "#f0f0f0");
+    gradient.addColorStop(1, "#d8d8d8");
+    context.fillStyle = gradient;
     context.fillRect(x, y, width, height);
-    context.fillStyle = "#ffdd00";
+
+    // Icono de plato/food
+    context.fillStyle = COLORS.coral;
     context.beginPath();
-    context.arc(x + width / 2, y + height / 2 - 12, 48, 0, Math.PI * 2);
+    context.arc(x + width / 2, y + height / 2 - 20, 50, 0, Math.PI * 2);
     context.fill();
-    context.fillStyle = "#111111";
-    context.font = "700 20px Arial, Helvetica, sans-serif";
+
+    context.strokeStyle = COLORS.border;
+    context.lineWidth = 3;
+    context.beginPath();
+    context.arc(x + width / 2, y + height / 2 - 20, 50, 0, Math.PI * 2);
+    context.stroke();
+
+    // Texto
+    context.fillStyle = COLORS.ink;
+    context.font = "700 18px Arial, Helvetica, sans-serif";
     context.textAlign = "center";
-    context.fillText("Foto no incluida", x + width / 2, y + height / 2 + 60);
-    context.font = "400 14px Arial, Helvetica, sans-serif";
-    context.fillText("Abre la pagina en localhost", x + width / 2, y + height / 2 + 85);
+    context.fillText("IMAGEN", x + width / 2, y + height / 2 + 50);
+    context.fillText("NO DISPONIBLE", x + width / 2, y + height / 2 + 75);
     context.textAlign = "left";
     context.restore();
 }
@@ -141,6 +155,23 @@ function wrapText(context, text, x, y, maxWidth, lineHeight, maxLines) {
     });
 }
 
+// ============================================
+// NEW DESIGN - COLORS AND STYLE
+// ============================================
+const COLORS = {
+    coral: "#FF5757",
+    redWarm: "#F04E4E",
+    yellow: "#FFD230",
+    cream: "#FBE8B6",
+    white: "#FFFFFF",
+    brown: "#7B3F26",
+    green: "#59C135",
+    orange: "#FF9F1A",
+    border: "#5a2d1f",
+    ink: "#2d1810",
+    muted: "#6b4535"
+};
+
 function createSnapshotCanvas(product, options = {}) {
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
@@ -150,50 +181,119 @@ function createSnapshotCanvas(product, options = {}) {
     canvas.width = SNAPSHOT_WIDTH;
     canvas.height = SNAPSHOT_HEIGHT;
 
-    context.fillStyle = "#fff3cf";
+    // ========== FONDO PRINCIPAL ==========
+    context.fillStyle = COLORS.coral;
     context.fillRect(0, 0, SNAPSHOT_WIDTH, SNAPSHOT_HEIGHT);
 
-    context.fillStyle = "#fffaf0";
-    drawRoundedRect(context, SNAPSHOT_PADDING, SNAPSHOT_PADDING, contentWidth, SNAPSHOT_HEIGHT - SNAPSHOT_PADDING * 2, 8);
-    context.fill();
-
-    context.strokeStyle = "#252934";
-    context.lineWidth = 3;
-    drawRoundedRect(context, SNAPSHOT_PADDING, SNAPSHOT_PADDING, contentWidth, SNAPSHOT_HEIGHT - SNAPSHOT_PADDING * 2, 8);
-    context.stroke();
-
-    const imageHeight = contentWidth * 0.75;
-
-    if (includeImage) {
-        drawCoveredImage(context, product.image, SNAPSHOT_PADDING, SNAPSHOT_PADDING, contentWidth, imageHeight);
-    } else {
-        drawImagePlaceholder(context, SNAPSHOT_PADDING, SNAPSHOT_PADDING, contentWidth, imageHeight);
+    // Decoraciones de fondo (estrellas y puntos)
+    context.fillStyle = "rgba(255, 255, 255, 0.15)";
+    for (let i = 0; i < 8; i++) {
+        const x = 60 + i * 100;
+        const y = 40 + (i % 3) * 30;
+        context.beginPath();
+        context.arc(x, y, 4, 0, Math.PI * 2);
+        context.fill();
+    }
+    for (let i = 0; i < 6; i++) {
+        const x = 90 + i * 120;
+        const y = SNAPSHOT_HEIGHT - 60 - (i % 2) * 40;
+        context.beginPath();
+        context.arc(x, y, 3, 0, Math.PI * 2);
+        context.fill();
     }
 
-    const infoStartY = SNAPSHOT_PADDING + imageHeight + 16;
+    // ========== CAJA PRINCIPAL (FONDO CREMA) ==========
+    const boxTop = SNAPSHOT_PADDING;
+    const boxHeight = SNAPSHOT_HEIGHT - SNAPSHOT_PADDING * 2;
 
-    context.fillStyle = "#15171c";
-    context.font = "700 28px Arial, Helvetica, sans-serif";
-    wrapText(context, product.name, SNAPSHOT_PADDING + 16, infoStartY + 28, contentWidth - 32, 32, 2);
-
-    context.fillStyle = "#60636c";
-    context.font = "700 18px Arial, Helvetica, sans-serif";
-    wrapText(context, product.description, SNAPSHOT_PADDING + 16, infoStartY + 72, contentWidth - 32, 22, 2);
-
-    context.fillStyle = "#ffdd00";
-    drawRoundedRect(context, SNAPSHOT_PADDING + 16, infoStartY + 110, 140, 40, 8);
+    context.fillStyle = COLORS.cream;
+    drawRoundedRect(context, SNAPSHOT_PADDING, boxTop, contentWidth, boxHeight, 16);
     context.fill();
 
-    context.fillStyle = "#000000";
-    context.font = "700 24px Arial, Helvetica, sans-serif";
+    // Borde estilo cómic
+    context.strokeStyle = COLORS.border;
+    context.lineWidth = 5;
+    drawRoundedRect(context, SNAPSHOT_PADDING, boxTop, contentWidth, boxHeight, 16);
+    context.stroke();
+
+    // ========== IMAGEN DEL PRODUCTO ==========
+    const imageHeight = contentWidth * 0.55;
+    const imageTop = SNAPSHOT_PADDING + 8;
+
+    // Marco de la imagen
+    context.fillStyle = COLORS.white;
+    drawRoundedRect(context, SNAPSHOT_PADDING + 8, imageTop, contentWidth - 16, imageHeight - 8, 12);
+    context.fill();
+
+    context.strokeStyle = COLORS.border;
+    context.lineWidth = 4;
+    drawRoundedRect(context, SNAPSHOT_PADDING + 8, imageTop, contentWidth - 16, imageHeight - 8, 12);
+    context.stroke();
+
+    if (includeImage) {
+        const imgX = SNAPSHOT_PADDING + 16;
+        const imgY = imageTop + 4;
+        const imgW = contentWidth - 32;
+        const imgH = imageHeight - 16;
+        drawCoveredImage(context, product.image, imgX, imgY, imgW, imgH);
+    } else {
+        drawImagePlaceholder(context, SNAPSHOT_PADDING + 16, imageTop + 4, contentWidth - 32, imageHeight - 16);
+    }
+
+    // ========== NOMBRE DEL PRODUCTO ==========
+    const infoStartY = imageTop + imageHeight + 12;
+
+    context.fillStyle = COLORS.ink;
+    context.font = "700 36px Arial, Helvetica, sans-serif";
+    wrapText(context, product.name.toUpperCase(), SNAPSHOT_PADDING + 20, infoStartY + 32, contentWidth - 40, 40, 2);
+
+    // ========== DESCRIPCIÓN ==========
+    context.fillStyle = COLORS.muted;
+    context.font = "600 16px Arial, Helvetica, sans-serif";
+    wrapText(context, product.description, SNAPSHOT_PADDING + 20, infoStartY + 85, contentWidth - 40, 22, 2);
+
+    // ========== PRECIO (ESTILO BOTÓN) ==========
+    const priceY = infoStartY + 120;
+    const priceWidth = 140;
+    const priceHeight = 44;
+    const priceRadius = priceHeight / 2; // Mitad de la altura para píldora perfecta
+
+    // Fondo amarillo del precio
+    context.fillStyle = COLORS.yellow;
+    drawRoundedRect(context, SNAPSHOT_PADDING + 20, priceY, priceWidth, priceHeight, priceRadius);
+    context.fill();
+
+    // Borde del precio
+    context.strokeStyle = COLORS.border;
+    context.lineWidth = 3;
+    drawRoundedRect(context, SNAPSHOT_PADDING + 20, priceY, priceWidth, priceHeight, priceRadius);
+    context.stroke();
+
+    // Texto del precio (rojo)
+    context.fillStyle = COLORS.redWarm;
+    context.font = "700 22px Arial, Helvetica, sans-serif";
     context.textAlign = "center";
-    context.fillText(product.price, SNAPSHOT_PADDING + 86, infoStartY + 135);
+    context.fillText(product.price, SNAPSHOT_PADDING + 20 + priceWidth / 2, priceY + 28);
 
-    context.fillStyle = "#60636c";
-    context.font = "700 14px Arial, Helvetica, sans-serif";
+    // ========== LOGO / MARCA ==========
+    context.fillStyle = COLORS.coral;
+    context.font = "900 18px Arial, Helvetica, sans-serif";
     context.textAlign = "right";
-    context.fillText("Clau Food", SNAPSHOT_WIDTH - SNAPSHOT_PADDING - 16, SNAPSHOT_HEIGHT - SNAPSHOT_PADDING - 12);
+    context.fillText("CLAU FOOD", SNAPSHOT_WIDTH - SNAPSHOT_PADDING - 20, SNAPSHOT_HEIGHT - 30);
 
+    // ========== LINDA DECORACIÓN EXTRA ==========
+    // Estrella decorativa
+    context.fillStyle = COLORS.yellow;
+    context.beginPath();
+    context.moveTo(SNAPSHOT_WIDTH - 100, SNAPSHOT_HEIGHT - 40);
+    for (let i = 1; i < 5; i++) {
+        const angle = (i * 4 * Math.PI) / 5 - Math.PI / 2;
+        context.lineTo(SNAPSHOT_WIDTH - 100 + Math.cos(angle) * 8, SNAPSHOT_HEIGHT - 40 + Math.sin(angle) * 8);
+    }
+    context.closePath();
+    context.fill();
+
+    context.textAlign = "left";
     return canvas;
 }
 

@@ -2,6 +2,7 @@ import {
     renderMenuItems,
     fetchMenuData,
     getCategorySlug,
+    initLazyLoading,
     MENU_JSON_PATH,
     MENU_LIST_SELECTOR,
     FEATURED_CATEGORIES,
@@ -35,6 +36,8 @@ export async function initFeaturedMenu() {
         const data = await fetchMenuData(MENU_JSON_PATH, CACHE_KEY_MENU);
         const featured = selectFeaturedItems(data);
         renderMenuItems(MENU_LIST_SELECTOR, featured, { prioritizeFirst: true });
+        // Re-init lazy loading for featured items
+        setTimeout(initLazyLoading, 50);
     } catch (error) {
         console.error("No se pudo cargar el JSON del menú destacado:", error);
         renderMenuItems(MENU_LIST_SELECTOR, [], { prioritizeFirst: true });

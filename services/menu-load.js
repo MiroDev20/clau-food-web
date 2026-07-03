@@ -1,6 +1,7 @@
 import {
     renderMenuItems,
     fetchMenuData,
+    initLazyLoading,
     MENU_LIST_SELECTOR,
     CACHE_KEY_MENU
 } from "./menu-utils.js";
@@ -69,6 +70,9 @@ function renderCurrentPage() {
 
     renderMenuItems(MENU_LIST_SELECTOR, pageItems, { prioritizeFirst: true });
     updatePaginationControls();
+
+    // Re-init lazy loading for new elements
+    setTimeout(initLazyLoading, 50);
 }
 
 export function goToPage(page) {
