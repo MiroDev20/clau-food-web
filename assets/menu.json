@@ -1,15 +1,23 @@
 [
     {
-        "id": 1,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "id": 0,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Perro sencillo",
         "categoria": "perros",
         "descripcion": "Perros",
         "precio": 6500
     },
     {
+        "id": 1,
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/perro-sencillo-papas_uht0ob.png",
+        "nombre": "Perro sencillo con papas",
+        "categoria": "perros",
+        "descripcion": "Perros",
+        "precio": 9000
+    },
+    {
         "id": 2,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Hawaiano",
         "categoria": "perros",
         "descripcion": "Perros",
@@ -17,7 +25,7 @@
     },
     {
         "id": 3,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/perro-hawaiano-papas_cjbeum.png",
         "nombre": "Hawaiano con papas a la francesa",
         "categoria": "perros",
         "descripcion": "Perros",
@@ -25,7 +33,7 @@
     },
     {
         "id": 4,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Suizo",
         "categoria": "perros",
         "descripcion": "Perros",
@@ -33,7 +41,7 @@
     },
     {
         "id": 5,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/perro-suizo-papas_y73ed5.png",
         "nombre": "Suizo con papas a la francesa",
         "categoria": "perros",
         "descripcion": "Perros",
@@ -41,7 +49,7 @@
     },
     {
         "id": 6,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Choriperro",
         "categoria": "perros",
         "descripcion": "Perros",
@@ -49,7 +57,7 @@
     },
     {
         "id": 7,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/perro-chorizo-papas_fibf3x.png",
         "nombre": "Choriperro con papas a la francesa",
         "categoria": "perros",
         "descripcion": "Perros",
@@ -57,7 +65,7 @@
     },
     {
         "id": 8,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Doña Claudia",
         "categoria": "perros",
         "descripcion": "Perros",
@@ -65,7 +73,7 @@
     },
     {
         "id": 9,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/perro-plancha-papas_l6upxg.png",
         "nombre": "Doña Claudia con papas a la brasa",
         "categoria": "perros",
         "descripcion": "Perros",
@@ -73,7 +81,7 @@
     },
     {
         "id": 10,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194908/salchipapa-peque%C3%B1a_bxrgts.png",
         "nombre": "Salchipapa pequeña",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -81,7 +89,7 @@
     },
     {
         "id": 11,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194908/salchipapa-sencilla_rrlkom.png",
         "nombre": "Salchipapa sencilla",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -89,7 +97,7 @@
     },
     {
         "id": 12,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Salchipapa para 2 personas",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -97,7 +105,7 @@
     },
     {
         "id": 13,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Salchipollo",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -105,7 +113,7 @@
     },
     {
         "id": 14,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Choripapa",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -113,7 +121,7 @@
     },
     {
         "id": 15,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Salchipapa suiza",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -121,7 +129,7 @@
     },
     {
         "id": 16,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194908/salchipapa-salvajada_n3svhu.png",
         "nombre": "Salvajada para 4 personas",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -129,7 +137,7 @@
     },
     {
         "id": 17,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Hamburguesa de carne",
         "categoria": "hamburguesas",
         "descripcion": "Hamburguesas",
@@ -137,7 +145,7 @@
     },
     {
         "id": 18,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194906/hamburguesa-papas_zkfco1.png",
         "nombre": "Hamburguesa de carne con papas a la francesa",
         "categoria": "hamburguesas",
         "descripcion": "Hamburguesas",
@@ -145,7 +153,7 @@
     },
     {
         "id": 19,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Hamburguesa de pollo",
         "categoria": "hamburguesas",
         "descripcion": "Hamburguesas",
@@ -153,7 +161,7 @@
     },
     {
         "id": 20,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Hamburguesa de pollo con papas a la francesa",
         "categoria": "hamburguesas",
         "descripcion": "Hamburguesas",
@@ -161,7 +169,7 @@
     },
     {
         "id": 21,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Hamburguesa mixta",
         "categoria": "hamburguesas",
         "descripcion": "Hamburguesas",
@@ -169,7 +177,7 @@
     },
     {
         "id": 22,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/asado_iwejr9.png",
         "nombre": "Pechuga a la plancha con papas a la francesa y ensalada",
         "categoria": "asados",
         "descripcion": "Asados / Picadas",
@@ -177,7 +185,7 @@
     },
     {
         "id": 23,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Asado mixto",
         "categoria": "asados",
         "descripcion": "Chorizo, pechuga, cerdo, papas a la francesa y ensalada",
@@ -185,7 +193,7 @@
     },
     {
         "id": 24,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Cerdo a la plancha con papas a la francesa y ensalada",
         "categoria": "asados",
         "descripcion": "Asados / Picadas",
@@ -193,7 +201,7 @@
     },
     {
         "id": 25,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194908/pizza-salami_ef4lqi.png",
         "nombre": "Pizza Salami",
         "categoria": "pizzas",
         "descripcion": "Pizzas",
@@ -201,7 +209,7 @@
     },
     {
         "id": 26,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194907/pizza-hawaiana_ateucy.png",
         "nombre": "Pizza Hawaiana",
         "categoria": "pizzas",
         "descripcion": "Pizzas",
@@ -209,7 +217,7 @@
     },
     {
         "id": 27,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-roman-odintsov-4871115_w6nclm.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/pizza-pepperoni_n5uvzs.png",
         "nombre": "Pizza Pepperoni",
         "categoria": "pizzas",
         "descripcion": "Pizzas",
@@ -217,7 +225,7 @@
     },
     {
         "id": 28,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-ramon-rangel-661975902-34593402_dlrpzs.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/pizza-jamon-queso_ghk9i1.png",
         "nombre": "Pizza Jamón y queso",
         "categoria": "pizzas",
         "descripcion": "Pizzas",
@@ -225,7 +233,7 @@
     },
     {
         "id": 29,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635869/pexels-readymade-4021955_fd2zpd.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
         "nombre": "Pizza Doña Clau",
         "categoria": "pizzas",
         "descripcion": "Cuatro carnes: cerdo, pechuga, chorizo y carne",
@@ -233,7 +241,7 @@
     },
     {
         "id": 30,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635868/pexels-piotr-arnoldes-7862031-6493570_en8ped.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194908/pizza-perro_z1bmrv.png",
         "nombre": "Pizza Perro",
         "categoria": "pizzas",
         "descripcion": "Pizzas",
@@ -241,7 +249,7 @@
     },
     {
         "id": 31,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/w_720,f_auto,q_auto/v1781635870/pexels-sonali-mehta-1514525371-31596394_an6cus.webp",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/pizza-jamon-queso-pollo_ldpri4.png",
         "nombre": "Pizza Jamón, queso y pollo",
         "categoria": "pizzas",
         "descripcion": "Pizzas",
