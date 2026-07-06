@@ -6,7 +6,7 @@ var y="./assets/menu.json",b=".menu__list",Ne="No se pudo cargar el men\xFA en e
             <div class="product-card__meta">
                 <span class="product-card__price">${U(e.precio)}</span>
                 <button class="product-card__snapshot" aria-label="Foto ${e.nombre}">
-                    <img src="./assets/icons/camera.svg" alt="" width="24" height="24">
+                    <img src="https://res.cloudinary.com/dakne3w9w/image/upload/v1783379924/camera_bnfm6j.svg" alt="" width="24" height="24">
                 </button>
             </div>
         </div>
@@ -28,7 +28,7 @@ var y="./assets/menu.json",b=".menu__list",Ne="No se pudo cargar el men\xFA en e
                 </li>
                 <li class="order-tutorial__step">
                     <span class="order-tutorial__icon" aria-hidden="true">
-                        <img src="./assets/icons/camera.svg" alt="">
+                        <img src="https://res.cloudinary.com/dakne3w9w/image/upload/v1783379924/camera_bnfm6j.svg" alt="">
                     </span>
                     <span>
                         <strong>Toca la c&aacute;mara</strong>
@@ -37,7 +37,7 @@ var y="./assets/menu.json",b=".menu__list",Ne="No se pudo cargar el men\xFA en e
                 </li>
                 <li class="order-tutorial__step">
                     <span class="order-tutorial__icon" aria-hidden="true">
-                        <img src="./assets/icons/whatsapp-svgrepo-com.svg" alt="">
+                        <img src="https://res.cloudinary.com/dakne3w9w/image/upload/v1783380638/arrow-down_hlewcj.svg" alt="">
                     </span>
                     <span>
                         <strong>Ve a contacto</strong>
@@ -65,7 +65,7 @@ var y="./assets/menu.json",b=".menu__list",Ne="No se pudo cargar el men\xFA en e
             <p class="product-card__desc">${e.descripcion}</p>
             <div class="product-card__meta">
                 <span class="product-card__price">${U(e.precio)}</span>
-                <button class="product-card__snapshot" aria-label="Foto ${e.nombre}"><img src="./assets/icons/camera.svg" alt="" width="24" height="24"></button>
+                <button class="product-card__snapshot" aria-label="Foto ${e.nombre}"><img src="https://res.cloudinary.com/dakne3w9w/image/upload/v1783379924/camera_bnfm6j.svg" alt="" width="24" height="24"></button>
             </div>
         </div>
     `,o}async function be(){try{let e=k(D);if(e){console.log("Usando datos en cach\xE9 para combos"),ye(e);return}let t=await fetch(at);if(!t.ok)throw new Error(`HTTP ${t.status} ${t.statusText}`);let o=await t.json();R(D,o),ye(o)}catch(e){console.error("No se pudieron cargar los combos:",e)}}function ye(e){let t=document.querySelector(nt);t&&(t.innerHTML="",e.forEach((o,r)=>t.appendChild(st(o,r))))}function it(e){let t={};return I.forEach(o=>{t[o]=[]}),e.forEach(o=>{let r=L(o.categoria);I.includes(r)&&t[r].length<2&&t[r].push(o)}),I.flatMap(o=>t[o])}async function Ae(){try{let e=await E(y,v),t=it(e);A(b,t,{prioritizeFirst:!0}),setTimeout(O,50)}catch(e){console.error("No se pudo cargar el JSON del men\xFA destacado:",e),A(b,[],{prioritizeFirst:!0})}}function ct(){let e=window.location.pathname;return e.includes("menu.html")?"menu":(e.includes("index.html")||e==="/"||e==="","index")}function lt(){let e=document.querySelector(".menu__more");if(!e)return;let t=ae();t&&t!=="all"?e.href=`./menu.html?filter=${t}`:e.href="./menu.html"}function Oe(){J(),H(),ue(),Te()}function Ce(){let e=ct();e==="index"?(be(),Ae(),E(y).then(t=>{let o=t.slice(0,10),r=x(o,!1);q(r)}).catch(t=>console.warn("Could not generate schema:",t)),de(),setTimeout(lt,100),setTimeout(O,100)):e==="menu"&&(X(),oe(!0),E(y).then(t=>{let o=x(t,!0);q(o)}).catch(t=>console.warn("Could not generate schema:",t)))}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",()=>{Oe(),Ce()}):(Oe(),Ce());

@@ -112,7 +112,7 @@ export function createMenuItemElement(item, options = {}) {
             <div class="product-card__meta">
                 <span class="product-card__price">${formatPrice(item.precio)}</span>
                 <button class="product-card__snapshot" aria-label="Foto ${item.nombre}">
-                    <img src="./assets/icons/camera.svg" alt="" width="24" height="24">
+                    <img src="https://res.cloudinary.com/dakne3w9w/image/upload/v1783379924/camera_bnfm6j.svg" alt="" width="24" height="24">
                 </button>
             </div>
         </div>

@@ -25,7 +25,7 @@ function createComboCard(combo, index) {
             <p class="product-card__desc">${combo.descripcion}</p>
             <div class="product-card__meta">
                 <span class="product-card__price">${formatPrice(combo.precio)}</span>
-                <button class="product-card__snapshot" aria-label="Foto ${combo.nombre}"><img src="./assets/icons/camera.svg" alt="" width="24" height="24"></button>
+                <button class="product-card__snapshot" aria-label="Foto ${combo.nombre}"><img src="https://res.cloudinary.com/dakne3w9w/image/upload/v1783379924/camera_bnfm6j.svg" alt="" width="24" height="24"></button>
             </div>
         </div>
     `;

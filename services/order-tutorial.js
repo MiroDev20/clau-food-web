@@ -60,7 +60,7 @@ function createOrderTutorialModal() {
                 </li>
                 <li class="order-tutorial__step">
                     <span class="order-tutorial__icon" aria-hidden="true">
-                        <img src="./assets/icons/camera.svg" alt="">
+                        <img src="https://res.cloudinary.com/dakne3w9w/image/upload/v1783379924/camera_bnfm6j.svg" alt="">
                     </span>
                     <span>
                         <strong>Toca la c&aacute;mara</strong>
@@ -69,7 +69,7 @@ function createOrderTutorialModal() {
                 </li>
                 <li class="order-tutorial__step">
                     <span class="order-tutorial__icon" aria-hidden="true">
-                        <img src="./assets/icons/whatsapp-svgrepo-com.svg" alt="">
+                        <img src="https://res.cloudinary.com/dakne3w9w/image/upload/v1783380638/arrow-down_hlewcj.svg" alt="">
                     </span>
                     <span>
                         <strong>Ve a contacto</strong>
