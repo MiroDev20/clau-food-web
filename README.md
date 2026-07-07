@@ -1,11 +1,11 @@
-# 🍔 Clau Food — Carta digital interactiva
+# 🍔 Clau Food — MVP de carta digital para negocio local
 
 > Menú visual para pedir perros, salchipapas, hamburguesas, asados y pizzas.  
 > Filtros, captura de productos y pedido directo por WhatsApp.
 
 <div align="center">
 
-[![Estado](https://img.shields.io/badge/Estado-Activo-brightgreen)](https://github.com/tu-usuario/clau-food) [![Licencia](https://img.shields.io/badge/Licencia-MIT-blue)](LICENSE)
+[![Estado](https://img.shields.io/badge/Estado-Activo-brightgreen)](https://github.com/MiroDev20/clau-food) [![Licencia](https://img.shields.io/badge/Licencia-MIT-blue)](LICENSE)
 
 </div>
 
@@ -13,14 +13,14 @@
 
 ## ✨ Características principales
 
-- 📱 **Responsive** — Adaptado a móviles, tablets y escritorio.
-- 🔍 **Filtrado dinámico** — Navega por categorías: Perros, Salchipapas, Hamburguesas, Asados y Pizzas.
-- 📸 **Captura de productos** — Genera una imagen del producto con sus datos (precio, descripción y logo). Útil para compartir o enviar por WhatsApp.
-- 📦 **Datos en JSON** — Menú y combos almacenados en archivos JSON fáciles de actualizar sin tocar código.
-- 📬 **Tutorial interactivo** — Guía al usuario paso a paso para realizar su primer pedido.
-- ⚡ **Rendimiento optimizado** — Lazy loading de imágenes, caché en `localStorage`, bundle único con esbuild.
-- ♿ **Accesibilidad** — Contraste mejorado, navegación por teclado y atributos ARIA.
-- 🧠 **SEO** — Datos estructurados con Schema.org, `robots.txt` y `sitemap.xml`.
+- 📱 **MVP móvil-first** — Interfaz diseñada para dispositivos móviles y desktop.
+- 🔍 **Filtrado activo** — Navega rápido por categorías: Perros, Salchipapas, Hamburguesas, Asados y Pizzas.
+- 📸 **Captura de producto** — Genera una imagen de pedido para compartir o enviar por WhatsApp.
+- 📦 **Menú en JSON** — Productos y combos fáciles de actualizar sin tocar la lógica principal.
+- 📬 **Pedido por WhatsApp** — Enlace directo para enviar la selección al negocio.
+- ⚡ **Bundle optimizado** — Generado con `esbuild` para carga rápida.
+- ♿ **Accesibilidad** — Navegación por teclado y atributos ARIA básicos.
+- 🧠 **SEO básico** — Schema.org, `robots.txt` y `sitemap.xml`.
 
 ---
 
@@ -38,7 +38,7 @@
 | JavaScript (ES6+) | Lógica interactiva |
 | [esbuild](https://esbuild.github.io/) | Empaquetado y minificación |
 | [Cloudinary](https://cloudinary.com/) | Alojamiento y optimización de imágenes |
-| LocalStorage + SessionStorage | Caché de datos y preferencias del usuario |
+| LocalStorage + SessionStorage | Caché de datos y preferencias |
 | GitHub Pages (opcional) | Hosting estático |
 
 ---
@@ -48,29 +48,33 @@
 ```
 clau-food/
 ├── assets/
+│   ├── bundle.js            # Bundle compilado por esbuild
 │   ├── combos.json          # Datos de combos
 │   ├── menu.json            # Datos del menú completo
-│   ├── icons/               # Iconos (cámara, WhatsApp)
-│   ├── logos/               # Logo de la marca
-│   └── productos/           # Imágenes (o vía Cloudinary)
+│   └── preview.png          # Imagen de vista previa para el README
+├── docs/                   # Documentación técnica adicional
 ├── services/
-│   ├── menu-utils.js        # Utilidades compartidas
-│   ├── menu-featured.js     # Destacados en index.html
-│   ├── menu-load.js         # Carga completa en menu.html
-│   ├── combos-load.js       # Carga de combos
-│   ├── menu-filter.js       # Lógica de filtrado
-│   ├── product-snapshot.js  # Captura de productos
-│   ├── product-snapshot-renderer.js  # Renderizado en canvas
-│   ├── order-tutorial.js    # Tutorial interactivo
-│   └── header-menu.js       # Menú hamburguesa
+│   ├── business-hours.js
+│   ├── combos-load.js
+│   ├── header-menu.js
+│   ├── main.js              # Entrada principal para esbuild
+│   ├── menu-featured.js
+│   ├── menu-filter.js
+│   ├── menu-load.js
+│   ├── menu-utils.js
+│   ├── notifications.js
+│   ├── order-tutorial.js
+│   ├── product-snapshot-renderer.js
+│   └── product-snapshot.js
 ├── styles/
-│   └── index.css            # Todos los estilos (incluye reset)
+│   └── index.css            # Estilos principales
 ├── index.html               # Página principal
 ├── menu.html                # Menú completo
-├── robots.txt               # Configuración para crawlers
-├── sitemap.xml              # Mapa del sitio
 ├── package.json             # Dependencias y scripts
-├── .gitignore               # Archivos ignorados
+├── package-lock.json        # Dependencias bloqueadas
+├── robots.txt               # Instrucciones para crawlers
+├── sitemap.xml              # Mapa del sitio
+├── LICENSE                  # Licencia del proyecto
 └── README.md                # Este archivo
 ```
 
@@ -83,19 +87,18 @@ clau-food/
 git clone https://github.com/MiroDev20/clau-food.git
 cd clau-food
 
-# 2. Instala las dependencias (opcional, si usas esbuild)
+# 2. Instala las dependencias
 npm install
 
-# 3. Genera el bundle (opcional)
+# 3. Genera el bundle optimizado
 npm run build
 
-# 4. Abre el proyecto con un servidor local
-# Ejemplo con Python 3
+# 4. Sirve el sitio localmente
 python3 -m http.server 8000
 # Luego visita http://localhost:8000
 ```
 
-> **Nota:** El sitio funciona sin `npm run build` porque usa los scripts fuente directamente. El bundle es solo para optimización en producción.
+> **Nota:** Los archivos HTML cargan `assets/bundle.js`. Si modificas código en `services/`, ejecuta `npm run build` para regenerar el bundle.
 
 ---
 
@@ -105,17 +108,25 @@ En `package.json`:
 
 ```json
 "scripts": {
-  "build": "esbuild services/main.js --bundle --outfile=assets/bundle.js --format=esm --minify"
+  "build": "esbuild services/main.js --bundle --outfile=assets/bundle.js --format=esm --minify",
+  "dev": "esbuild services/main.js --bundle --outfile=assets/bundle.js --format=esm --watch",
+  "test": "echo \"Error: no test specified\" && exit 1"
 }
 ```
 
-Ejecuta `npm run build` para generar el bundle optimizado.
+- `npm run build` — Crea `assets/bundle.js` en modo producción.
+- `npm run dev` — Reconstruye automáticamente el bundle cuando hay cambios en `services/`.
 
 ---
 
 ## 📦 Datos del menú
 
-Los productos se almacenan en `assets/menu.json`. Cada item tiene:
+Los datos del menú se centralizan en JSON:
+
+- `assets/menu.json` — productos individuales
+- `assets/combos.json` — combos disponibles
+
+Ejemplo de producto:
 
 ```json
 {
@@ -128,34 +139,48 @@ Los productos se almacenan en `assets/menu.json`. Cada item tiene:
 }
 ```
 
-Los combos están en `assets/combos.json` con estructura similar.
+Esta arquitectura permite actualizar la carta sin tocar la lógica de renderizado.
 
 ---
 
-## 🔧 Personalización
+## 🎯 Enfoque del proyecto
 
-- **Cambiar colores:** edita las variables CSS en `:root` dentro de `styles/index.css`.
-- **Añadir categorías:** agrega la categoría en `menu.json` y el botón correspondiente en el HTML.
-- **Modificar tutorial:** edita los pasos en `services/order-tutorial.js`.
+Clau Food es un MVP de carta digital para negocio local. La solución está diseñada para presentar el menú de manera clara, facilitar pedidos por WhatsApp y actualizar la oferta rápidamente desde archivos JSON.
+
+Este MVP es ideal para:
+- restaurantes pequeños y food trucks,
+- servicios de comida a domicilio por WhatsApp,
+- negocios que buscan una carta digital rápida sin backend.
 
 ---
 
-## 🧑‍🤝‍🧑 Contribuciones
+## 📄 Documentación adicional
 
-¡Las contribuciones son bienvenidas! Si deseas mejorar algo:
+El repositorio incluye documentación técnica en `docs/`:
+- `docs/alcance.md`
+- `docs/arquitectura.md`
+- `docs/casos-de-uso.md`
+- `docs/flujo-sistema.md`
+- `docs/modelo-dominio.md`
+- `docs/modelo-entidad-relación.md`
+- `docs/requerimientos.md`
+- `docs/visión.md`
 
-1. Haz un fork del repositorio.
-2. Crea una rama con tu mejora (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -m "feat: agregar nueva funcionalidad"`).
-4. Sube la rama (`git push origin feature/nueva-funcionalidad`).
-5. Abre un Pull Request.
+---
+
+## 🤝 Contribuciones
+
+Si deseas mejorar el proyecto:
+1. Haz fork del repositorio.
+2. Crea una rama con un nombre claro: `git checkout -b feature/nombre`.
+3. Haz tus cambios y haz commit con mensajes descriptivos.
+4. Envía un Pull Request.
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto está bajo la licencia **MIT**.  
-Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
