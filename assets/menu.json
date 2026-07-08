@@ -81,7 +81,7 @@
     },
     {
         "id": 10,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194908/salchipapa-peque%C3%B1a_bxrgts.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194908/salchipapa-peque%C3%B1a_bxrgts.png",
         "nombre": "Salchipapa pequeña",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -89,7 +89,7 @@
     },
     {
         "id": 11,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194908/salchipapa-sencilla_rrlkom.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194908/salchipapa-sencilla_rrlkom.png",
         "nombre": "Salchipapa sencilla",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -129,7 +129,7 @@
     },
     {
         "id": 16,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194908/salchipapa-salvajada_n3svhu.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194908/salchipapa-salvajada_n3svhu.png",
         "nombre": "Salvajada para 4 personas",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -145,7 +145,7 @@
     },
     {
         "id": 18,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783293338/hamburguesa-papas_eoi0ff.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783293338/hamburguesa-papas_eoi0ff.png",
         "nombre": "Hamburguesa de carne con papas a la francesa",
         "categoria": "hamburguesas",
         "descripcion": "Hamburguesas",
@@ -201,7 +201,7 @@
     },
     {
         "id": 25,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194908/pizza-salami_ef4lqi.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194908/pizza-salami_ef4lqi.png",
         "nombre": "Pizza Salami",
         "categoria": "pizzas",
         "descripcion": "Pizzas",
@@ -209,7 +209,7 @@
     },
     {
         "id": 26,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194907/pizza-hawaiana_ateucy.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/pizza-hawaiana_ateucy.png",
         "nombre": "Pizza Hawaiana",
         "categoria": "pizzas",
         "descripcion": "Pizzas",
@@ -241,7 +241,7 @@
     },
     {
         "id": 30,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/v1783194908/pizza-perro_z1bmrv.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194908/pizza-perro_z1bmrv.png",
         "nombre": "Pizza Perro",
         "categoria": "pizzas",
         "descripcion": "Pizzas",
