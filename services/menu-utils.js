@@ -130,7 +130,14 @@ export function renderMenuItems(containerSelector, items, options = {}) {
 
     container.innerHTML = "";
 
-    if (!Array.isArray(items) || items.length === 0) {
+    // Filtrar productos con imagen pendiente (placeholder)
+    const PENDING_IMAGE_KEYWORDS = ["proximamente", "proximo", "proximamente", "temporal", "placeholder"];
+    const filteredItems = items.filter(item => {
+        const ruta = item.ruta?.toLowerCase() || "";
+        return !PENDING_IMAGE_KEYWORDS.some(keyword => ruta.includes(keyword));
+    });
+
+    if (!Array.isArray(filteredItems) || filteredItems.length === 0) {
         const messageItem = document.createElement("li");
         messageItem.className = "product-card menu__item menu__item--empty";
         messageItem.textContent = NO_MENU_MESSAGE;
@@ -138,7 +145,7 @@ export function renderMenuItems(containerSelector, items, options = {}) {
         return;
     }
 
-    items.forEach((item, index) => {
+    filteredItems.forEach((item, index) => {
         const fetchPriority = index < 2 && options.prioritizeFirst ? "high" : "low";
         container.appendChild(createMenuItemElement(item, { fetchPriority }));
     });
