@@ -421,6 +421,18 @@ body::before {
     text-transform: uppercase;
 }
 
+.hero__location {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--clau-coral);
+    color: var(--clau-white);
+    font-family: var(--font-display);
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    border-radius: 999px;
+    border: 3px solid var(--clau-border);
+}
+
 .hero__paragraph {
     max-width: 36rem;
     color: var(--clau-ink);
@@ -611,6 +623,20 @@ body::before {
 .menu__title {
     color: var(--clau-coral);
     text-shadow: 3px 3px 0 var(--clau-yellow);
+}
+
+.menu__location {
+    display: block;
+    text-align: center;
+    margin: 0.5rem auto 1.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--clau-coral);
+    color: var(--clau-white);
+    font-family: var(--font-display);
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    border-radius: 999px;
+    border: 3px solid var(--clau-border);
+    width: fit-content;
 }
 
 /* ========================================
