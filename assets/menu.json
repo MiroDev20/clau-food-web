@@ -177,7 +177,7 @@
     },
     {
         "id": 22,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/asado_iwejr9.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783718819/asado-pechuga-papas-ensalada_gcc85w.png",
         "nombre": "Pechuga a la plancha con papas a la francesa y ensalada",
         "categoria": "asados",
         "descripcion": "Asados / Picadas",
@@ -185,7 +185,7 @@
     },
     {
         "id": 23,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783718819/asado-mixto-papas-ensalada_flfe9a.png",
         "nombre": "Asado mixto",
         "categoria": "asados",
         "descripcion": "Chorizo, pechuga, cerdo, papas a la francesa y ensalada",
@@ -193,7 +193,7 @@
     },
     {
         "id": 24,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783194907/asado_iwejr9.png",
         "nombre": "Cerdo a la plancha con papas a la francesa y ensalada",
         "categoria": "asados",
         "descripcion": "Asados / Picadas",
