@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const isOpen = totalCurrentMinutes >= openTime && totalCurrentMinutes < closeTime;
 
         if (isOpen) {
-            statusElement.innerHTML = `🟢 Abierto ahora <span class="hero__schedule">(6:30 PM - 11:00 PM)</span>`;
+            statusElement.innerHTML = `<p class="hero__status--green">🟢 Abierto</p><span class="mid-line">|</span><p class="hero__schedule"> Hasta las 11:00 PM</p>`;
         } else {
-            statusElement.innerHTML = `🔴 Cerrado ahora <span class="hero__schedule">(Abrimos a las 6:30 PM)</span>`;
+            statusElement.innerHTML = `<p class="hero__status--red">🔴 Cerrado</p><span class="mid-line">|</span><p class="hero__schedule"> Hasta las 6:30 PM</p>`;
         }
     }
 

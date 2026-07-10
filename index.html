@@ -2,12 +2,44 @@
 <html lang="es">
 
 <head>
+    <!----------------------- Title ----------------------->
+    <title>Clau Food - Comida Rápida de Calidad</title>
+
     <!----------------------- Primary Meta-tags ----------------------->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Clau Food - Disfruta de nuestras deliciosas combinaciones de comida rápida con los mejores precios.">
-    <title>Clau Food - Comida Rápida de Calidad</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Clau Food - Disfruta de nuestras deliciosas combinaciones de comida rápida con los mejores precios."
+    >
+
+    <!----------------------- Fav Icon ----------------------->
+    <link
+        rel="icon"
+        href="https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783272897/claufood-logo_kqulw8.png"
+    >
+
+    <!----------------------- CSS Links ----------------------->
+    <link
+        rel="stylesheet"
+        href="./styles/index.css"
+    >
+
+    <!----------------------- JavaScript Links ----------------------->
+    <script
+        src="./services/business-hours.js"
+        defer
+    ></script>
+
+    <script
+        type="module"
+        src="./assets/bundle.js?v=20260702-5"
+        defer
+    ></script>
 
     <!----------------------- Organization Schema ----------------------->
     <script type="application/ld+json">
@@ -20,7 +52,7 @@
       "telephone": "+573244840556",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Bogotá",
+        "addressLocality": "Barranquilla",
         "addressCountry": "CO"
       },
       "contactPoint": {
@@ -30,101 +62,321 @@
       }
     }
     </script>
-
-    <!----------------------- Fav Icon ----------------------->
-    <link rel="icon" href="https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783272897/claufood-logo_kqulw8.png">
-
-    <!----------------------- CSS Links ----------------------->
-    <link rel="stylesheet" href="./styles/index.css">
-
-    <!----------------------- JavaScript Links ----------------------->
-    <script src="./services/business-hours.js" defer></script>
-    <script type="module" src="./assets/bundle.js?v=20260702-5" defer></script>
 </head>
 
 <body>
     <!----------------------- Header Section ----------------------->
-    <header class="header" id="hero">
+    <header
+        class="header"
+        id="hero"
+    >
         <div class="header__logo-container">
-            <a href="./index.html" class="header__logo-link"><img src="https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783369111/claufood-icon-brown_zo4ftr.png" alt="Clau Food Logo" class="header__logo"></a>
+            <a
+                class="header__logo-link"
+                href="./index.html"
+            >
+                <img
+                    class="header__logo"
+                    src="https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783290163/claufood-text-logo_j4ncy0.png"
+                    alt="Clau Food Logo"
+                >
+            </a>
         </div>
-        <img src="https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783290163/claufood-text-logo_j4ncy0.png" alt="" class="hero__title">
-        <button class="header__burger" aria-controls="header-overlay" aria-expanded="false" aria-label="Abrir menú">
+        <button
+            class="header__burger"
+            aria-controls="header-overlay"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+        >
             <span class="header__burger-bar"></span>
             <span class="header__burger-bar"></span>
             <span class="header__burger-bar"></span>
         </button>
         <ul class="header__options">
-            <li class="header__option"><a href="#bienvenido" class="header__anchor">Bienvenido</a></li>
-            <li class="header__option"><a href="#combos" class="header__anchor">Combos</a></li>
-            <li class="header__option"><a href="#menu" class="header__anchor">Menú</a></li>
-            <li class="header__option"><a href="#contacto" class="header__anchor">Contacto</a></li>
+
+            <li class="header__option">
+                <a
+                    class="header__anchor"
+                    href="#bienvenido"
+                    >Bienvenido
+                </a>
+            </li>
+
+            <li class="header__option">
+                <a
+                    class="header__anchor"
+                    href="#combos"
+                    >Combos
+                </a>
+            </li>
+
+            <li class="header__option">
+                <a 
+                    class="header__anchor"
+                    href="#menu"
+                    >Menú
+                </a>
+            </li>
+
+            <li class="header__option">
+                <a
+                    class="header__anchor"
+                    href="#contacto"
+                    >Contacto
+                </a>
+            </li>
+
         </ul>
-        <nav id="header-overlay" class="header__overlay" aria-hidden="true">
+        <nav
+            class="header__overlay"
+            id="header-overlay"
+            aria-hidden="true"
+        >
             <ul class="header__options header__options--mobile">
-                <li class="header__option"><a href="#bienvenido" class="header__anchor">Bienvenido</a></li>
-                <li class="header__option"><a href="#combos" class="header__anchor">Combos</a></li>
-                <li class="header__option"><a href="#menu" class="header__anchor">Menú</a></li>
-                <li class="header__option"><a href="#contacto" class="header__anchor">Contacto</a></li>
+                <li class="header__option">
+                    <a
+                        class="header__anchor"
+                        href="#bienvenido"
+                        >Bienvenido
+                    </a>
+                </li>
+
+                <li class="header__option">
+                    <a
+                        href="#combos"
+                        class="header__anchor"
+                        >Combos
+                    </a>
+                </li>
+
+                <li class="header__option">
+                    <a
+                        href="#menu"
+                        class="header__anchor"
+                        >Menú
+                    </a>
+                </li>
+
+                <li class="header__option">
+                    <a
+                        href="#contacto"
+                        class="header__anchor"
+                        >Contacto
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
         <!----------------------- Hero Section ----------------------->
-        <section class="hero" id="bienvenido">
+        <section
+            class="hero"
+            id="bienvenido"
+        >
             <div class="hero__text">
-                <p class="hero__eyebrow" id="hero-status">Cargando horario...</p>
-                <img src="https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783290163/claufood-text-logo_j4ncy0.png" alt="" class="hero__title">
-                <p class="hero__sub-title">Perros, salchipapas, hamburguesas y pizzas con antojo real.</p>
-                <p class="hero__location">📍 Solo entregas en <strong>Caribe Verde</strong></p>
-                <p class="hero__paragraph">Una carta rapida, visual y lista para compartir. Mira el menu, filtra por
-                    categoria y guarda la foto de tu proximo pedido.</p>
-                <div class="hero__actions">
-                    <a href="#menu" class="hero__cta">Ver menu</a>
-                    <button type="button" class="hero__modal" aria-haspopup="dialog">¿Cómo pedir?</button>
+                <p
+                    class="hero__eyebrow"
+                    id="hero-status"
+                    >Cargando horario...
+                </p>
+
+                <p class="hero__sub-title"
+                    >Perros, salchipapas, hamburguesas y pizzas <span class="text__orange">con antojo real.</span>
+                </p>
+
+                <p class="hero__paragraph"
+                    >Pide en pocos minutos directamente por WhatsApp. Todo se prepara al momento para que llegue <span class="text__orange">caliente y listo</span> para disfrutar.
+                </p>
+                
+                <div class="hero__reviews">
+                    <p>
+                        ⭐⭐⭐⭐⭐ 4.9/
+                        <span class="small">5</span>
+                        <span class="mid-line">|</span>
+                    </p>
+                    <p>♥️ Más de 3.200 pedidos entregados</p>
                 </div>
+
+                <div class="hero__actions">
+                    <a
+                        class="hero__cta"
+                        href="#menu"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                                />
+                        </svg>Ver menu
+                    </a>
+                    <button
+                        class="hero__modal"
+                        type="button"
+                        aria-haspopup="dialog"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                                    />
+                            </svg>¿Cómo pedir?
+                    </button>
+                </div>
+
+                <div class="hero__info">
+                    <div class="hero__info-item">
+                        <div class="info__emoji-container">
+                            <span>🍔</span>
+                        </div>
+                        <div class="info__text">
+                            <span class="text__orange">15+</span>
+                            <p><span class="text__bold">Productos</span><br>para elegir</p>
+                        </div>
+                    </div>
+
+                    <div class="hero__info-item">
+                        <div class="info__emoji-container">
+                            <span>⏱️</span>
+                        </div>
+                        <div class="info__text">
+                            <p class="text__bold">Pedido en minutos</p>
+                            <p>Rápido y fácil</p>
+                        </div>
+                    </div>
+
+                    <div class="hero__info-item">
+                        <div class="info__emoji-container">
+                            <span>🗺️</span>
+                        </div>
+                        <div class="info__text">
+                            <p class="text__bold">Caribe Verde, Barranquilla</p>
+                            <p>Hecho para ti</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="hero__payments">
+                    <p>Aceptamos <span>💵 Efectivo</span><span>💳 Nequi</span></p>
+                </div> -->
             </div>
         </section>
         <!----------------------- Combos Section ----------------------->
-        <section class="combos" id="combos">
-            <h2 class="combos__title">Nuestros Combos</h2>
+        <section
+            class="combos"
+            id="combos"
+        >
+            <h2 class="combos__title">
+                Nuestros Combos
+            </h2>
             <ul class="combos__list"></ul>
         </section>
         <!----------------------- Menu Section ----------------------->
-        <section class="menu" id="menu">
+        <section
+            class="menu"
+            id="menu"
+        >
             <h2 class="menu__title">Nuestro Menú</h2>
 
-            <div class="menu__controls" role="group" aria-label="Filtrar menú por categoría">
-                <button class="menu__filter-button menu__filter-button--active" type="button" data-menu-filter="all"
-                    aria-pressed="true">Todos</button>
-                <button class="menu__filter-button" type="button" data-menu-filter="perros"
-                    aria-pressed="false">Perros</button>
-                <button class="menu__filter-button" type="button" data-menu-filter="salchipapas"
-                    aria-pressed="false">Salchipapas</button>
-                <button class="menu__filter-button" type="button" data-menu-filter="hamburguesas"
-                    aria-pressed="false">Hamburguesas</button>
-                <button class="menu__filter-button" type="button" data-menu-filter="asados"
-                    aria-pressed="false">Asados</button>
-                <button class="menu__filter-button" type="button" data-menu-filter="pizzas"
-                    aria-pressed="false">Pizzas</button>
+            <div
+                class="menu__controls"
+                role="group"
+                aria-label="Filtrar menú por categoría"
+            >
+                <button
+                    class="menu__filter-button menu__filter-button--active"
+                    type="button"
+                    data-menu-filter="all"
+                    aria-pressed="true"
+                    >Todos
+                </button>
+
+                <button
+                    class="menu__filter-button"
+                    type="button"
+                    data-menu-filter="perros"
+                    aria-pressed="false"
+                    >Perros
+                </button>
+
+                <button
+                    class="menu__filter-button"
+                    type="button"
+                    data-menu-filter="salchipapas"
+                    aria-pressed="false"
+                    >Salchipapas
+                </button>
+
+                <button
+                    class="menu__filter-button"
+                    type="button"
+                    data-menu-filter="hamburguesas"
+                    aria-pressed="false"
+                    >Hamburguesas
+                </button>
+
+                <button
+                    class="menu__filter-button"
+                    type="button"
+                    data-menu-filter="asados"
+                    aria-pressed="false"
+                    >Asados
+                </button>
+                
+                <button
+                    class="menu__filter-button"
+                    type="button"
+                    data-menu-filter="pizzas"
+                    aria-pressed="false"
+                    >Pizzas
+                </button>
             </div>
             <!----------------------- Menu List ----------------------->
             <ul class="menu__list"></ul>
 
             <!----------------------- Menu Footer Section ----------------------->
             <div class="menu__footer">
-                <a href="./menu.html" class="menu__more">Ver menú completo</a>
+                <a
+                    href="./menu.html"
+                    class="menu__more"
+                    >Ver menú completo
+                </a>
             </div>
         </section>
         <!----------------------- Contact Section ----------------------->
-        <section class="contacto" id="contacto">
-            <a href="https://wa.me/+573244840556?text=Hola,%20soy%20[TuNombre].%0A%0ADirecci%C3%B3n:%20[Calle%20123],%20[Torre/Conjunto],%20[Apto].%0A%0AMedios%20de%20pago:%20Efectivo%20(con%20vuelto),%20o%20Nequi."
-                class="contacto__whatsapp-btn" target="_blank" aria-label="Pedir por WhatsApp">
-                <img src="https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783457693/whatsapp-link_hfnn7b.png"
-                    alt="">
+        <section
+            class="contacto"
+            id="contacto"
+        >
+            <a
+                class="contacto__whatsapp-btn"
+                href="https://wa.me/+573244840556?text=Hola,%20soy%20[TuNombre].%0A%0ADirecci%C3%B3n:%20[Calle%20123],%20[Torre/Conjunto],%20[Apto].%0A%0AMedios%20de%20pago:%20Efectivo%20(con%20vuelto),%20o%20Nequi."
+                target="_blank"
+                aria-label="Pedir por WhatsApp"
+            >
+                <img
+                    src="https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783457693/whatsapp-link_hfnn7b.png"
+                    alt=""
+                >
             </a>
-            <img src="https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783459233/claufood-comic_a1p55x.png" alt="comic" class="contacto__comic">
+            <img
+                class="contacto__comic"
+                src="https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783459233/claufood-comic_a1p55x.png"
+                alt="comic"
+            >
         </section>
     </main>
 </body>
