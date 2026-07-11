@@ -25,8 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const isOpen = totalCurrentMinutes >= openTime && totalCurrentMinutes < closeTime;
 
         if (isOpen) {
+            statusElement.style.border = "2px solid #349f1f"
             statusElement.innerHTML = `<p class="hero__status--green">🟢 Abierto</p><span class="mid-line">|</span><p class="hero__schedule"> Hasta las 11:00 PM</p>`;
         } else {
+            statusElement.style.border = "2px solid #ff0000"
             statusElement.innerHTML = `<p class="hero__status--red">🔴 Cerrado</p><span class="mid-line">|</span><p class="hero__schedule"> Hasta las 6:30 PM</p>`;
         }
     }
