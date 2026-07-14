@@ -1392,7 +1392,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
    RESPONSIVE
    ======================================== */
 
-@media (max-width: 420px) {
+@media (max-width: 720px) {
     .hero {
         background: url(https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783312359/claufood-background-mobile_m9jrdo.png) no-repeat center/cover;
     }
