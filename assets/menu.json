@@ -1,11 +1,11 @@
 [
     {
         "id": 0,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784400339/perro-sencillo_cezu7e.png",
         "nombre": "Perro sencillo",
         "categoria": "perros",
         "descripcion": "Perros",
-        "precio": 6500
+        "precio": 5900
     },
     {
         "id": 1,
@@ -105,7 +105,7 @@
     },
     {
         "id": 13,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784342666/salchipapa-choripapa_stp4gy.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784400339/salchipapa-salchipollo_zpgkg3.png",
         "nombre": "Salchipollo",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -113,7 +113,7 @@
     },
     {
         "id": 14,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784342666/salchipapa-choripapa_stp4gy.png",
         "nombre": "Choripapa",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -121,7 +121,7 @@
     },
     {
         "id": 15,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784400339/salchipapa-salchisuiza_gxxonm.png",
         "nombre": "Salchipapa suiza",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
