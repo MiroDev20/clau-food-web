@@ -17,7 +17,7 @@
     },
     {
         "id": 2,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784342664/hawiano_xlv4px.png",
         "nombre": "Hawaiano",
         "categoria": "perros",
         "descripcion": "Perros",
@@ -49,7 +49,7 @@
     },
     {
         "id": 6,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784383742/perro-choriperro_yfe0cr.png",
         "nombre": "Choriperro",
         "categoria": "perros",
         "descripcion": "Perros",
@@ -105,7 +105,7 @@
     },
     {
         "id": 13,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784342666/salchipapa-choripapa_stp4gy.png",
         "nombre": "Salchipollo",
         "categoria": "salchipapas",
         "descripcion": "Salchipapas",
@@ -137,7 +137,7 @@
     },
     {
         "id": 17,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784342662/hamburguesa-carne_md9zxc.png",
         "nombre": "Hamburguesa de carne",
         "categoria": "hamburguesas",
         "descripcion": "Hamburguesas",
@@ -153,7 +153,7 @@
     },
     {
         "id": 19,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784342500/hamburguesa-pollo_vmfuz6.png",
         "nombre": "Hamburguesa de pollo",
         "categoria": "hamburguesas",
         "descripcion": "Hamburguesas",
@@ -169,7 +169,7 @@
     },
     {
         "id": 21,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784342629/hamburguesa-mixta-papas_px5gxg.png",
         "nombre": "Hamburguesa mixta",
         "categoria": "hamburguesas",
         "descripcion": "Hamburguesas",
@@ -233,7 +233,7 @@
     },
     {
         "id": 29,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/proximamente_vhsicg.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1784383742/pizza-do%C3%B1aclaudia_zyuqcs.png",
         "nombre": "Pizza Doña Clau",
         "categoria": "pizzas",
         "descripcion": "Cuatro carnes: cerdo, pechuga, chorizo y carne",
