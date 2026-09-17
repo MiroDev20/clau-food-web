@@ -1,21 +1,21 @@
 ﻿[
     {
         "id": 1,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783271142/combo-salchipapapeque%C3%B1a-cocacola_dudlay.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/q_auto:eco,f_auto,w_360,c_fill,g_auto/v1783271142/combo-salchipapapeque%C3%B1a-cocacola_dudlay.png",
         "nombre": "Combo Básico",
         "descripcion": "Salchipapa pequeña y Cocacola",
         "precio": 10900
     },
     {
         "id": 2,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783271142/salchipapa-sencilla-cocacola_tlmbj7.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/q_auto:eco,f_auto,w_360,c_fill,g_auto/v1783271142/salchipapa-sencilla-cocacola_tlmbj7.png",
         "nombre": "Combo Premium",
         "descripcion": "Salchipapa sencilla y Cocacola",
         "precio": 16900
     },
     {
         "id": 3,
-        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_limit/v1783271142/perro-plancha-papas-cuatro_olqxzh.png",
+        "ruta": "https://res.cloudinary.com/dakne3w9w/image/upload/q_auto:eco,f_auto,w_360,c_fill,g_auto/v1783271142/perro-plancha-papas-cuatro_olqxzh.png",
         "nombre": "Combo Económico",
         "descripcion": "Perro a la plancha con papas y Cuatro",
         "precio": 12900
