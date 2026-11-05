@@ -84,8 +84,8 @@ clau-food/
 
 ```bash
 # 1. Clona el repositorio
-git clone https://github.com/MiroDev20/clau-food.git
-cd clau-food
+git clone https://github.com/MiroDev20/clau-food-web.git
+cd clau-food-web
 
 # 2. Instala las dependencias
 npm install
